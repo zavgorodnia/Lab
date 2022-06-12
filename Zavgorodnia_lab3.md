@@ -58,7 +58,21 @@ return (x)
 
 my_ifelse(var, '>=' ,12)
 ```
+## Результати 
 
+```
+> my_ifelse <- function(x,expression,n) {
++   if (expression == '>')  return (x[x>n])
++   if (expression == '<')  return (x[x<n])
++   if (expression == '>=') return (x[x>=n])
++   if (expression == '<=') return (x[x<=n])
++   if (expression == '==') return (x[x==n])
++   return (x)
++ }
+> 
+> my_ifelse(test_vec, '>=' ,12)
+[1] 12 13 14 15
+```
 
 ## 4. Функція columnmean(x, removeNA), яка розраховує середнє значення (mean) по кожному стовпцю матриці, або data frame. Логічний параметр removeNA вказує, чи видаляти NA значення. По замовчуванню він дорівнює TRUE.
 
