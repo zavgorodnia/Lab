@@ -50,7 +50,8 @@ integer(0)
 ```
 my_ifelse <- function(x,expression,n) {
 if (expression == '>') return (x[x>n])
-if (expression == '<') return (x[x if (expression == '>=') return (x[x>=n])
+if (expression == '<')  return (x[x<n])
+if (expression == '>=') return (x[x>=n])
 if (expression == '<=') return (x[x<=n])
 if (expression == '==') return (x[x==n])
 return (x)
